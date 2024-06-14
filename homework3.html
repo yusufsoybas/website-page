@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("img.cars").eq(0).attr("src","ferrari.jpg").attr("title","Ferrari").attr("width","360").attr("height","240").css("border","10px solid red").slideUp(1000).slideDown(1000);
+            $("img.cars").eq(1).attr("src","koenigsegg.jpg").attr("title","Koeingsegg").attr("width","360").attr("height","240").css("border","10px solid red").slideUp(1000).slideDown(1000);
+            $("a.carlinks").eq(0).attr("href","https://www.ferrari.com");
+            $("a.carlinks").eq(1).attr("href","http://www.koenigsegg.com");
+        });
+    });
+
+</script>
+</head>
+<body>
+<h1>Yusuf Barış Soybaş</h1>
+
+<p>In this exercise, you will need two jQuery lines for the two <b>img</b> (image) elements, and two jQuery lines for the two <b>a</b> (hyperlink) elements. First select all <b>img</b> elements with the <b>class</b> name <b>cars</b>, then use the <b>jQuery attr() method</b> chained with the <b>eq() method to add index numbers</b> for changing the <b>src</b> attribute value of "lamborghini.jpg" with "ferrari.jpg" (in the first image), and the <b>src</b> attribute value of "bugatti.jpg" with "koenigsegg.jpg" (in the second image). Also change the <b>title</b> attribute value "Lamborghini" with "Ferrari" (in the first image), and the <b>title</b> attribute value "Bugatti" with "Koenigsegg" (in the second image). Change the <b>width</b> attribute value "300" with "360" (in both images), and the <b>height</b> attribute value "200" with "240" (in both images). After completing the values of the attr() method, chain it with the <b>css() method</b> to change the <b>border</b> values as "10px solid red", and then chain it with the <b>slideUp()</b> and <b>slideDown()</b> methods, giving <b>1000 milliseconds</b> for both slideUp() and slideDown() (in both images). Afterwards, select the two <b>a</b> elements (hyperlinks) with the class name <b>carlinks</b> and chain both of them with the <b>eq() method to add the necessary index numbers</b> for changing the <b>href</b> attribute value "http://www.lamborghini.com" with "https://www.ferrari.com" (in the first image's hyperlink); and "http://www.bugatti.com" with "http://www.koenigsegg.com" (in the second image's hyperlink).</p> 
+
+<p><a href="https://www.w3schools.com/jquery/html_attr.asp" target="_blank">Click here for the jQuery attr() method</a></p>
+
+<p><a href="https://www.w3schools.com/jquery/jquery_chaining.asp" target="_blank">Click here for the jQuery chaining method</a></p>
+
+<p><button>Click here</button></p>
+
+<a class="carlinks" href="http://www.lamborghini.com" target="_blank"><img class="cars" src="lamborghini.jpg" width="300" height="200" title="Lamborghini" style="float:left;border:10px solid lightblue;"></a>
+
+<a class="carlinks" href="http://www.bugatti.com" target="_blank"><img class="cars" src="bugatti.jpg" width="300" height="200" title="Bugatti" style="float:right;border:10px solid lightblue;"></a>
+
+</body>
+</html>
